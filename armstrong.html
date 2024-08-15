@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		// var num = Number(prompt("Enter a number"))
+		// var a = String(num);
+		// var len = a.length;	
+		// var str = a.split("");	
+		// var sum = 0;
+		// for(var i=0; i<len; i++){
+		// 	var sum = sum + Math.pow(str[i],len);
+		// }
+		// if(num == sum){
+		// 	console.log(`${num} is Armstrong number`);	
+		// }
+		// else{
+		// 	console.log(`${num} is not a Armstrong number`);
+		// }
+
+		var num = Number(prompt("Enter a number to check whether it is armstrong or not"));
+		var temp = num;
+		var len = 0;
+		var sum = 0;
+		while(temp>0){
+			temp = parseInt(temp/10);
+			len++
+		}
+		temp = num;
+		temp1 = num;
+		while(temp>0){
+			var s = temp%10;
+			var sum = sum + s**len;
+			temp = parseInt(temp/10);			
+		}
+		if(num == sum){
+			console.log("This is armstrong number");			
+		}
+		else{
+			console.log("This is not a armstrong number");
+			
+		}
+					
+	</script>
+
+
+</body>
+</html>
+
